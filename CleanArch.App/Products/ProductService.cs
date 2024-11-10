@@ -2,6 +2,7 @@
 using CleanArch.App.Products.DTO;
 using CleanArch.Dom.Orders;
 using CleanArch.Dom.Products;
+using CleanArch.Dom.Shared;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,7 +29,7 @@ namespace CleanArch.App.Products
         }
         public void AddProduct(AddProductDto command)
         {
-            var product = new Product(command.Title,command.Price);
+            var product = new Product(command.Title,Money.FromTooman(command.Price) );
             _repository.Add(product);
             _repository.Save();
         }
@@ -36,6 +37,7 @@ namespace CleanArch.App.Products
         public void EditProduct(EditProductDto command)
         {
             var product = _repository.GetById(command.Id);
+            product.Edit(command.Title, Money.FromTooman(command.Price));
             _repository.Update(product);
             _repository.Save();
         }
@@ -44,7 +46,7 @@ namespace CleanArch.App.Products
         {
             return _repository.GetAll().Select(products => new ProductDto()
             {
-                Price = products.Price,
+                Price = products.Price.Value,
                 Id = products.Id,
                  Title = products.Title
             }).ToList();
@@ -56,7 +58,7 @@ namespace CleanArch.App.Products
             return new ProductDto()
             {
                 Title = products.Title,
-                Price = products.Price,
+                Price = products.Price.Value,
                 Id = products.Id,
             };
         }

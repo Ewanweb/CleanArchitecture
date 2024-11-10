@@ -11,11 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArch.Infranstructure",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArch.Contracts", "CleanArch.Contracts\CleanArch.Contracts.csproj", "{430A72B8-D70C-4C43-9B69-D558AB318B81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{EEF51595-6BEC-4B0F-9041-8BC31A9EFDB0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{EEF51595-6BEC-4B0F-9041-8BC31A9EFDB0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EndPoint", "EndPoint", "{23996EA5-512A-421F-9996-74AEEEC2D68E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cleanArch.Config", "cleanArch.Config\cleanArch.Config.csproj", "{68EB4B90-1B8A-422C-A913-686DFA3A2E0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cleanArch.Config", "cleanArch.Config\cleanArch.Config.csproj", "{68EB4B90-1B8A-422C-A913-686DFA3A2E0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{E922159D-3EFC-41C8-8439-B40ADC5FA0E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,12 +49,17 @@ Global
 		{68EB4B90-1B8A-422C-A913-686DFA3A2E0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68EB4B90-1B8A-422C-A913-686DFA3A2E0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68EB4B90-1B8A-422C-A913-686DFA3A2E0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E922159D-3EFC-41C8-8439-B40ADC5FA0E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E922159D-3EFC-41C8-8439-B40ADC5FA0E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E922159D-3EFC-41C8-8439-B40ADC5FA0E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E922159D-3EFC-41C8-8439-B40ADC5FA0E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{EEF51595-6BEC-4B0F-9041-8BC31A9EFDB0} = {23996EA5-512A-421F-9996-74AEEEC2D68E}
+		{E922159D-3EFC-41C8-8439-B40ADC5FA0E9} = {23996EA5-512A-421F-9996-74AEEEC2D68E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2C294886-2CAC-4D43-A63A-DA5DD5962C6C}
